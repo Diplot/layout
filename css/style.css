@@ -2,6 +2,7 @@
     width: 100%;
     height: 90vh;
     border-left: 2px solid #000;
+
 }
 .header{
     background-color: #ffe4c4;
@@ -151,7 +152,6 @@
     background-color: #440000;
 
     animation: smile2 10s ease-in-out infinite;
-    -webkit-animation: smile2 10s ease-in-out infinite;
 }
   @keyframes smile2 {
     30% { transform: scaleY(0.1); }
