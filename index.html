@@ -5,29 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-  </script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
+    </script>
 </head>
-<style>
-    .flex{
-        display: flex;
-        width: 100%;
-        height: 70vh;
-    }
-    .left{
-        width: 30%;
-    }
-    .right{
-        background-color:#168b18 ;
-        width: 70%;
-    }
-</style>
 <body>
     <div id="tabs">
         <ul>
@@ -35,76 +22,61 @@
           <li><a href="#tabs-2">float</a></li>
           <li><a href="#tabs-3">position</a></li>
           <li><a href="#tabs-4">flex</a></li>
+          <li><a href="#tabs-5">Cube</a></li>
         </ul>
         <div id="tabs-1">
-            <table cols="2" style="width: 100%; height: 90vh; border-left: 2px solid #000;">
+            <table class="contant">
                 <tr>
-                    <th colspan="2" style="background-color: #ffe4c4; height: 80px;">Cities</th>
+                    <th colspan="2" class="header">Cities</th>
                 </tr>
                 <tr>
-                  <td style="width: 30%;">Menu</td>
-                  <td style="width: 70%; background-color: #168b18;">Contant</td>
+                  <td class="left">Menu</td>
+                  <td class="right">Contant</td>
                 </tr>
                 <tr>
-                  <td colspan="2" style="background-color: #008b8b; height: 80px;">footer</td>
+                  <td class="footer" colspan="2">footer</td>
                 </tr>
               </table>
         </div>
         <div id="tabs-2">
-            <div style="border-left: 2px solid #000;">
-                <header style=" width:100%;
-                            height: 10vh;
-                            text-align: center;
-                            background-color: #ffe4c4;">
+            <div class="contant">
+                <header class="header">
                     Cities  
-            </header>
-            <div style="width: 100%; height: 70vh; clear: both;">
-                <div style="float: left;                    
-                            width: 30%;
-                            height: 70vh;">
-                    menu    
-                </div>
-                <div style="float: right;
-                            background-color: #168b18;
-                            width: 70%;
-                            height: 70vh;">
-                    Contant 
-                </div>
-            </div>     
-            <footer style=" width: 100%;
-                            height: 10vh;
-                            background-color: #008b8b; ">
-                    footer  
-            </footer>
+                </header>
+                <div class="clearboth">
+                    <div class="left float-left">
+                        menu
+                    </div>
+                    <div  class="right float-right">
+                        Contant 
+                    </div>
+                </div>     
+                <footer class="footer">
+                        footer  
+                </footer>
             </div>
         </div>
         <div id="tabs-3">
-            <div style="width: 100%; height: 500px; border-left: solid 2px #000; height: 90vh;">
-                <header style="text-align: center; background-color: #ffe4c4; height: 10vh;">
+            <div class="contant">
+                <header class=" header">
                     Cities  
                 </header>
-                <div style="position: relative; ">
-                    <div style="width: 30%;
-                                height: 70vh;">
+                <div class="main">
+                    <div class="left">
                         menu    
                     </div>
-                    <div style="position: absolute;
-                                background-color: #168b18;
-                                width: 70%;
-                                height: 70vh;
-                                left:30%;
-                                top:0">
+                    <div class="right main-right">
                         Contant 
                     </div>
                 </div>   
-                <footer style="background-color: #008b8b; height: 10vh;">
+                <footer class="footer">
                     footer  
                 </footer>
             </div>
         </div>
         <div id="tabs-4">
-            <div style="border-left: 2px solid #000;">
-                <header style="background-color: #ffe4c4; height: 10vh;">
+            <div class="contant">
+                <header class="header">
                     Cities  
                 </header>
                 <div class="flex">
@@ -115,11 +87,28 @@
                         Contant 
                     </div>
                 </div>     
-                <footer style="background-color: #008b8b; height: 10vh;">
+                <footer class="footer">
                     footer  
                 </footer>
             </div>
         </div>
-      </div>
+        <div id="tabs-5">
+            <div class="cube">
+                <figure class="side side__top"><p>Hello</p></figure>
+                <figure class="side side__front"><p>Hello</p></figure>                
+                <figure class="side side__right"><p>Hello</p></figure>
+                <figure class="side side__top"><div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div></figure>
+                <figure class="side side__front"><div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div></figure>                
+                <figure class="side side__right"><div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div></figure>
+            </div>
+        <div class="trash">
+            <div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div>
+            <div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div>
+            <div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div>
+            <div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div>
+            <div class="creature"><div class="lips__big"><div class="lips__small"></div></div></div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
